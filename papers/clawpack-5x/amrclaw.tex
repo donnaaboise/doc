@@ -17,9 +17,11 @@ finer level are created and destroyed (as opposed to moving these grids) to
 follow important features in the solution.}
 
 \begin{figure}[tb]
-    \centering
-    \includegraphics[width=\textwidth, trim=40 80 40 70, clip]{./figures/shockbubble_grids.png}
-    \caption{\revised{An illustration of grid and cell layout for an
+  \begin{center}
+    % \includegraphics[width=\textwidth, trim=40 80 40 70, clip]{./figures/shockbubble_grids.png}
+    \includegraphics[width=\textwidth]{./figures/amr_sb_mesh_0000.pdf}
+\end{center}
+\caption{\revised{An illustration of grid and cell layout for an
     axisymmetric Euler gas shock bubble interaction.  The illustration shows
     cells on levels one and two and only grid outlines on levels three and
     four.}}
@@ -107,7 +109,7 @@ to increase the limit may be necessary.
 three-dimensional shock-bubble interaction problem found in the \clawpack
 \texttt{apps} repository, illustrating localized phenomena requiring adaptive
 refinement. In \cref{fig:amr_scaling} we show scalability tests and some timings
-for this example, when run on a 40 core Intel Xeon Haswell machine 
+for this example, when run on a 40 core Intel Xeon Haswell machine
 \revised{(E5-2670v3 at 2.3 GHz)}, using
 \texttt{KMP\_AFFINITY compact} \revised{with one thread per core}.
 For timing purposes, the only modifications made to the input parameters was to

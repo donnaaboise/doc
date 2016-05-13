@@ -1,0 +1,6 @@
+To create PDF with patch borders produced using Tikz :
+
+    >> pdflatex amr_sb_mesh_0000.tex
+
+The tizk.0000.tex file was produced using valout_tikz.f.  The PNG file was created using
+Matlab (and exportfig).

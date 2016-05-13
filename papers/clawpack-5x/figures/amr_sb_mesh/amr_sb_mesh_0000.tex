@@ -1,0 +1,18 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\newcommand{\plotgrid}[1]{#1}
+\newcounter{level}
+\makeatletter
+\renewcommand\thelevel{\two@digits{\value{level}}}
+\makeatother
+% Show initial conditions
+\newcommand{\addlevel}{\stepcounter{level}\includegraphics{amr_sb_0000_\thelevel.png}}
+
+% white background (doesn't mask coarser patch borders though;  this can be fixed)
+% \newcommand{\addlevel}{\stepcounter{level}\includegraphics{amr_sb_0000_25.png}}
+
+\begin{document}
+\begin{tikzpicture}
+\node (mesh) {\input{tikz.0000.tex}};
+\end{tikzpicture};
+\end{document}
